@@ -1,0 +1,70 @@
+body{
+    background-image: url(./images/play-1738080_1280.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+
+.game-container{
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: red 1px 1px 2px 3px;
+    max-width: 40%;
+}
+
+.bath{
+    text-decoration: none;
+}
+
+.bath :hover{
+    background-color: white;
+    color: red!important;
+    border: 1px solid red;
+    padding: 5px 1px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.1s;
+}
+
+/* Mobile responsiveness using media queries */
+@media (min-width: 300px) and (max-width: 700px)  {
+    .game-container {
+        max-width: 80%; /* Adjust game container width for tablet screens */
+        padding: 20px;
+    }
+
+    .bath:hover {
+        padding: 4px 2px; /* Adjust padding for better fit on smaller screens */
+    }
+
+    .bath button{
+       margin-top: 30px;
+        margin-left: -100px;
+      
+    }
+}
+
+@media (max-width: 330px) {
+    .game-container {
+        max-width: 80%; /* Adjust game container for smaller mobile screens */
+        padding: 15px;
+    }
+
+    .bath{
+        margin-top: 10px;
+        margin-left: -100px;
+    }
+
+
+    .bath:hover {
+        padding: 3px 1px; /* Further reduce padding for very small screens */
+    }
+}
